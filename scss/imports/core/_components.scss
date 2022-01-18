@@ -1,0 +1,237 @@
+// css componen
+.test2__title1{
+    text-align: left;
+}
+.icon_why{
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    text-align: center;
+    transform: translate(17px,16px);
+}
+.icon_features_special{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    text-align: center;
+    width:30%;
+    transform: translate(122%, 10px);
+}
+.container{
+    position: relative;
+}
+#particles-js{
+    height:509px;
+    //  
+}
+// .img5{
+//     transform: translateX(-119px);
+// }
+.app_second{
+    transform: translateX(110px);
+    @media(max-width:975px) {
+        transform: inherit;
+    }
+}
+.icon_mobile{
+    width: 50%;
+    transform: translateX(50%);
+
+}
+.mobile_test{
+    text-align: center;
+    font-weight: 550;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.mobile_title{
+    text-align: left;
+    margin-left: 10px;
+}
+.is-pointer-down{
+    height: 100%;
+}
+.is-draggable{
+    margin-left: 50px;
+}
+.mobile_div{
+    padding-top: 10px;
+}
+.flickity-viewport{
+    height: 100%;
+}
+@media(max-width:976px) 
+{
+    .circles{
+        display: none;
+    }
+    
+}
+
+.button4 {
+    position: relative;
+    // background-color:lightblue;
+    border: none;
+    padding: 1.2em 1.4em;
+    overflow: hidden;
+    font-size: 19px;
+    transition: 0.4s;
+    border-radius : 20px;
+  &:hover {
+    background: lightblue;
+    opacity: 1;
+    transition: 0s;
+   
+  
+}
+}
+
+.toTop {
+    @include text(12px, arial, none, #ffffff, upperCase);
+    position: absolute;
+    bottom: 125px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+    @include xs {
+        bottom: 100px;
+        right: -50px;
+    }
+    // &:before {
+    //     content: "";
+    //     width: 100px;
+    //     height: 1px;
+    //     background: #ffffff;
+    //     display: block;
+    //     margin-right: 10px;
+    //     @include xs {
+    //         width: 70px;
+    //     }
+    // }
+}
+
+.Waves{
+    position: relative;
+    width: 100%;
+    height: 111px;
+    // background: #3586ff;
+    overflow: hidden;
+    transform: rotateX(172deg);
+    }
+    .Waves .wave{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url(/img/wavesOpacity.svg);
+        background-size: 1000px 100px;
+    }
+    .Waves .wave.wave1 
+    {
+        animation: animate1 30s linear infinite;
+        z-index: 999;
+        opacity: 1;
+        animation-delay: 0s;
+        bottom: 0;
+    }
+    .Waves .wave.wave2
+    {
+        animation: animate1 15s linear infinite;
+        z-index: 999;
+        opacity: 0.5;
+        animation-delay: -5s;
+        bottom: 0px;
+    }
+    .Waves .wave.wave3
+    {
+        animation: animate1 15s linear infinite;
+        z-index: 998;
+        opacity: 0.2;
+        animation-delay: -2s;
+        // bottom: 15px;
+    }
+    .Waves .wave.wave4
+    {
+        animation: animate2 15s linear infinite;
+        z-index: 997;
+        opacity:0.7;
+        animation-delay: -5s;
+        bottom: 0px;
+    }
+    @keyframes animate1 {
+        0%{
+            background-position-x: 0px;
+        }
+        100%{
+            background-position-x: -1000px;
+        }
+    }
+    @keyframes animate2 {
+        0%{
+            background-position-x: 0px;
+        }
+        100%{
+            background-position-x: 1000px;
+        }
+    }
+
+
+
+
+
+// .app_total{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-template-rows: 1fr 1fr;
+// }
+
+.img_backgound{
+    position: absolute;
+    height: 14%;
+}
+
+// .app__image{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+// }
+.img_backgound1{
+    position: absolute;
+    height: 44%;
+}
+.img_backgound2{
+    width: 100%;
+    position: absolute;
+    // height: 97%;
+    z-index: -1;
+    transform:rotate(90deg)
+}
+.app__image1{
+    width: 100%;
+}
+.img5{
+    // transform: rotate(45deg);
+   
+    height: 443px;
+}
+
+.linkss{
+    &.active123{
+        color: red;
+    }
+}
+.questions{
+    &.active123{
+        color: red;
+    }
+}
+.text-primary{
+    color: #5c54ff !important;
+  }
